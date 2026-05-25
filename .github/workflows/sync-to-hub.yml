@@ -2,20 +2,14 @@ name: Sync to Hugging Face Hub
 on:
   push:
     branches: [main]
-  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+      - uses: huggingface/hub-sync@v0.1.0
         with:
-          fetch-depth: 0
-          lfs: true
-      - name: Push to Hub
-        uses: huggingface/hub-sync@v0.1.0
-        with:
-          github_repo_id: abhijay029/AI-Services
+          github_repo_id: ${{ github.repository }}
           huggingface_repo_id: Abhijay029/AI_Services
           hf_token: ${{ secrets.HF_TOKEN }}
-          repo_type: space
