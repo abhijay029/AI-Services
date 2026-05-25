@@ -5,17 +5,17 @@ const tasks = [
   {
     id: 'predict',
     title: 'Sentiment Prediction',
-    endpoint: 'http://127.0.0.1:8000/predict'
+    endpoint: 'https://abhijay029-ai-services.hf.space/predict'
   },
   {
     id: 'generate',
     title: 'Text Generation',
-    endpoint: 'http://127.0.0.1:8000/generate'
+    endpoint: 'https://abhijay029-ai-services.hf.space/generate'
   },
   {
     id: 'classification',
     title: 'Zero-Shot Classification',
-    endpoint: 'http://127.0.0.1:8000/classification'
+    endpoint: 'https://abhijay029-ai-services.hf.space/classification'
   }
 ]
 
