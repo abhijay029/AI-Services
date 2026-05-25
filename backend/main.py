@@ -15,7 +15,8 @@ class ClassificationRequest(BaseModel):
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://https://ai-services-delta.vercel.app"
 ]
 
 app.add_middleware(
