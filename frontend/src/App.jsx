@@ -5,17 +5,17 @@ const tasks = [
   {
     id: 'predict',
     title: 'Sentiment Prediction',
-    endpoint: 'https://abhijay029-ai-services.hf.space/predict'
+    endpoint: `${import.meta.env.VITE_API_URL}/predict`
   },
   {
     id: 'generate',
     title: 'Text Generation',
-    endpoint: 'https://abhijay029-ai-services.hf.space/generate'
+    endpoint: `${import.meta.env.VITE_API_URL}/generate`
   },
   {
     id: 'classification',
     title: 'Zero-Shot Classification',
-    endpoint: 'https://abhijay029-ai-services.hf.space/classification'
+    endpoint: `${import.meta.env.VITE_API_URL}/classification`
   }
 ]
 
