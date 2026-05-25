@@ -1,0 +1,127 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.app-header {
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-header p {
+  margin-top: 0.5rem;
+  color: #4b5563;
+}
+
+.task-picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.task-button {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.task-button.active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+
+.task-card {
+  background: #ffffff;
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.task-card h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.task-card label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.task-card input,
+.task-card textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  font: inherit;
+}
+
+.task-card button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 0.9rem;
+  background: #0f766e;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.task-card button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.result {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.6rem;
+  background: #f8fafc;
+}
+
+.result.success {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.result.error {
+  border-color: #fca5a5;
+  background: #fef2f2;
+}
+
+.result pre {
+  margin: 0.4rem 0 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.82rem;
+  max-height: 260px;
+  overflow: auto;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 1rem 0.8rem 2rem;
+  }
+
+  .task-card button {
+    width: 100%;
+    align-self: stretch;
+  }
+}
