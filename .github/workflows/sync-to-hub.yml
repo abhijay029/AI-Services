@@ -13,7 +13,7 @@ jobs:
           fetch-depth: 0
           lfs: true
       - name: Push to Hub
-        uses: huggingface/hub-sync@v1.0
+        uses: huggingface/hub-sync@v0.1.0
         with:
           github_repo_id: abhijay029/AI-Services
           huggingface_repo_id: Abhijay029/AI_Services
